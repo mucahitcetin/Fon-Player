@@ -40,10 +40,10 @@ const songsList = [
         image: "assest/son.jpg"
     },
     {
-        name: "Ağlama",
-        link: "assest/ağlama.mp3",
-        artist: "Göksel Baktagir",
-        image: "assest/ağlama.jpg"
+        name: "Taghtam Deh",
+        link: "assest/farid.mp3",
+        artist: "Farid Farjad ",
+        image: "assest/farid.jpg"
     },
     {
         name: "Hicaz Taksim",
@@ -52,10 +52,28 @@ const songsList = [
         image: "assest/muhlis.jpg"
     },
     {
+        name: "Hasbihal",
+        link: "assest/hasbihal.mp3",
+        artist: "Yansımalar",
+        image: "assest/hasbihal.jpg"
+    },
+    {
+        name: "River Flows in You",
+        link: "assest/river.mp3",
+        artist: "Yiruma",
+        image: "assest/river.jpg"
+    },
+    {
         name: "October",
         link: "assest/october.mp3",
         artist: "Adrian Berenguer",
         image: "assest/october.jpg"
+    },
+    {
+        name: "Ağlama",
+        link: "assest/ağlama.mp3",
+        artist: "Göksel Baktagir",
+        image: "assest/ağlama.jpg"
     },
     {
         name: "Sessiz Bir Ağıt",
@@ -231,7 +249,7 @@ audio.onended = () => {
 }
 
 audio.addEventListener('timeupdate', () => {
-    currentTimeRef.innerText = timeFormatter(audio.currentTimeRef)
+    currentTimeRef.innerText = timeFormatter(audio.currentTime)
 })
 
 

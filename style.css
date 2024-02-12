@@ -3,10 +3,17 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root {
+    --bg1: rgba(212, 81, 16, 0.768);
+    --bg2: rgba(14, 78, 207, 0.801);
+}
 
 body {
     height: 100vh;
-    background: linear-gradient(rgba(200, 100, 50, 0.4), rgba(50, 100, 200, 0.6));
+    background: linear-gradient(var(--bg1), var(--bg2));
+    /* background-image: url('assest/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; */
 }
 
 .music-player {
@@ -21,7 +28,7 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 0 10px rgba(50, 200, 100, 0.7);
-    border-radius: 8px;
+    border-radius: 15px;
 }
 
 img {
@@ -68,7 +75,7 @@ img {
 
 #play,
 #pause {
-    background-color: rgb(10, 100, 200);
+    background: linear-gradient(var(--bg1), var(--bg2));
     height: 2.5em;
     width: 2.5em;
     font-size: 1.8em;
